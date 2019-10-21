@@ -21,6 +21,10 @@ sam init -r nodejs -o lambdas -n {lambda name}
 
 This is as simple as creating a `.env` file
 
+## How it works
+The wrapper translates query strings, path variables, and body payloads into a consumable event object for Lambdas.
+
+
 ## Future State
 
 * Possibly move `.env` to another folder should it become needed to have the same variable with different values.

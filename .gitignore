@@ -17,3 +17,7 @@ Thumbs.db
 # General
 log/
 *.log
+
+# Theta related
+lambdas/
+!.gitinclude
