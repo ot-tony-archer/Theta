@@ -1,0 +1,20 @@
+<h1>Θ (Theta)</h1>
+<p>Below is a list of the lambdas you have configured within the theta wrapper:</p>
+
+<h2>Lambdas</h2>
+<ul>
+  {{#each lambdas as |lambda|}}
+    {{#each resourceFunctions as |function|}}
+      <li><b>{{function.name}}:</b><br />📁 {{lambda.path}}/
+        <ul>
+          {{#each function.events as |event|}}
+            <li>{{event.name}}<br /> <a href="http://localhost:3000/{{lambda.path}}/{{function.codeUri}}{{event.path}}">.../{{function.codeUri}}{{event.path}}</a> ({{event.method}})</li>
+          {{/each}}
+        </ul>
+      </li>
+    {{/each}}
+
+  {{else}}
+    <li>ERROR GETTING LIST OF LAMBDAS</li>
+  {{/each}}
+</ul>

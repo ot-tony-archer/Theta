@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: antiquewhite; }
+
+a {
+  color: #00B7FF; }
+
+li {
+  line-height: 1.8em;
+  list-style: none; }
+  li:before {
+    content: '⨍';
+    margin-left: -1em;
+    margin-right: .3em;
+    font-size: 1.6rem; }
+  li > ul > li:before {
+    content: '🔰';
+    font-size: 1rem; }
+
+/*# sourceMappingURL=style.css.map */
